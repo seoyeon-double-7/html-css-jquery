@@ -1,6 +1,9 @@
-$('.btn').mouseenter(function(){
-  $('div').show()
+$('.show-btn').click(function(){
+  $('.container div').slideDown()
 })
-$('.btn').mouseleave(function(){
-  $('div').hide()
+$('.hide-btn').click(function(){
+  $('.container div').slideUp()
+})
+$('.toggle-btn').click(function(){
+  $('.container div').slideToggle()
 })
