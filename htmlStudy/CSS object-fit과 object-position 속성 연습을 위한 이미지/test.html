@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .frame1{
+      border: 5px solid #000;
+      width: 400px;
+      height: 400px;
+      background: url(woman.jpg) no-repeat left center;
+      margin-bottom: 20px;
+    }
+    .frame2{
+      border: 5px solid red;
+      width: 400px;
+      height: 400px;
+    }
+    .frame2 img{
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      object-position: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame1"></div>
+  <div class="frame2"><img src="woman.jpg" alt=""></div>
+  <img src="woman.jpg" alt="">
+</body>
+
+</html>

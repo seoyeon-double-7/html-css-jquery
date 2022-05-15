@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+    /* Fontawesome 4.7 */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+    body {
+      font-family: 'Nanum Myeongjo', serif;
+    }
+
+    /* 속성 제외하기위해 [] 괄호를 씀 */
+    input[id=trigger] {
+      display: none;
+    }
+    label[for=trigger]{
+      /* border: 1px solid red; */
+      width: 30px;
+      height: 20px;
+      display: block;
+      position: relative;
+      cursor: pointer;
+    }
+    label[for=trigger] span{
+      display: block;
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    label[for=trigger]span:nth-child(1) {
+      top: 0;
+    }
+
+    label[for=trigger]span:nth-child(2) {
+      top: 50%;
+    }
+
+    label[for=trigger]span:nth-child(3) {
+      top: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <input type="checkbox" id="trigger">
+    <label for="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="slidebar"></div>
+  </div>
+</body>
+
+</html>
