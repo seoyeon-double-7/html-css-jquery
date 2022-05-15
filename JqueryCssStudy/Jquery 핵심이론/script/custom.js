@@ -1,9 +1,9 @@
-$('.show-btn').click(function(){
-  $('.container div').slideDown()
+$('.add-btn').click(function(){
+  $('.container div').addClass('active')
 })
-$('.hide-btn').click(function(){
-  $('.container div').slideUp()
+$('.remove-btn').click(function(){
+  $('.container div').removeClass('active')
 })
 $('.toggle-btn').click(function(){
-  $('.container div').slideToggle()
+  $('.container div').toggleClass('active')
 })
