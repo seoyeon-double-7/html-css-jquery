@@ -1,6 +1,6 @@
-$('.show-btn').click(function(){
+$('.btn').mouseenter(function(){
   $('div').show()
 })
-$('.hide-btn').click(function(){
+$('.btn').mouseleave(function(){
   $('div').hide()
 })
