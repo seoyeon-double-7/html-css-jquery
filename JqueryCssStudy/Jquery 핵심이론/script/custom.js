@@ -1,9 +1,6 @@
-$('.add-btn').click(function(){
-  $('.container div').addClass('active')
+$('.menu li').mouseenter(function(){
+  $(this).children('.sub-menu').stop().slideDown()
 })
-$('.remove-btn').click(function(){
-  $('.container div').removeClass('active')
-})
-$('.toggle-btn').click(function(){
-  $('.container div').toggleClass('active')
+$('.menu li').mouseleave(function(){
+  $(this).children('.sub-menu').stop().slideUp()
 })
